@@ -1,8 +1,8 @@
-# best-game-xlondze21
+# lumen-tide
 
 [![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
-[![rank](https://make.fun/badge/best-game-01/xlondze21/best-game-xlondze21/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
-[![reward](https://make.fun/badge/best-game-01/xlondze21/best-game-xlondze21/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/xlondze21/lumen-tide/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/xlondze21/lumen-tide/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
 **Lumen Tide** — a lantern-defense roguelite for make.fun's "Make the best game" (best-game-01). You are a wisp guarding the Last Lantern through 10 waves of shadow eels. Survive every wave, pick an upgrade after each one, sink the Gloom Maw (wave 5) and the Tide Tyrant (wave 10) to win.
 
