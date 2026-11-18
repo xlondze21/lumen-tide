@@ -1,51 +1,41 @@
-# Lumen Tide — Last Light of the Reef
+# best-game-xlondze21
 
-A lantern-defense roguelite for the web. You are the wisp of the Last
-Lantern: guard it through 10 waves of shadow eels, gather light shards,
-pick a blessing after every cleared wave, sink the Gloom Maw (wave 5) and
-the Tide Tyrant (wave 10) — and the reef shines again.
+[![make.fun · best-game-01](https://make.fun/badge/best-game-01.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![rank](https://make.fun/badge/best-game-01/xlondze21/best-game-xlondze21/rank.svg)](https://make.fun/bounty/best-game-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
+[![reward](https://make.fun/badge/best-game-01/xlondze21/best-game-xlondze21/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
-## Play
+**Lumen Tide** — a lantern-defense roguelite for make.fun's "Make the best game" (best-game-01). You are a wisp guarding the Last Lantern through 10 waves of shadow eels. Survive every wave, pick an upgrade after each one, sink the Gloom Maw (wave 5) and the Tide Tyrant (wave 10) to win.
 
-Open `game/index.html` in a desktop browser, or run `node serve.ts` and
-open http://localhost:8080. No build step, no network, no libraries — the
-whole game is plain ES modules plus a canvas, and all sound is synthesized
-with WebAudio.
-
-- **WASD / arrow keys** — swim
-- **Mouse** — aim
-- **Hold click / Space** — shoot light bolts (bolts can also shoot enemy
-  globs out of the water)
-- **Shift** — dash
-- **1 / 2 / 3 or click a card** — pick an upgrade between waves
-- **P** — pause · **M** — mute
-
-## Rules
-
-- Shadows swim for the lantern. If one reaches it, the lantern burns.
-  If the lantern (or you) runs out of light, the run ends.
-- Killing shadows drops light shards — swim over them to score.
-- After every cleared wave, choose one of three blessings: brighter bolts,
-  faster fire, twin flames, piercing light, a repaired lantern, and more.
-- Spitters keep their distance and lob globs; splitters break into minis;
-  brutes soak up bolts. Bosses hunt you, then turn on the lantern.
-
-## Screenshots
-
-The four shots in `screenshots/` are real renders of the game's own code,
-staged by `game/src/shots.js` (`?shot=start|play|boss|end&seed=1`).
-
-## Entry
-
-Built for the [Make the best game](https://make.fun/bounty/best-game-01)
-bounty on make.fun. `main.ts` (Node 22) copies `game/` and `screenshots/`
-to the output directory and writes `dossier.json` with the vendored
-make.fun library:
+## Run it
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+node serve.ts
+# then open http://localhost:8080
 ```
+
+Or just open `game/index.html` directly in a desktop browser — the game runs fully offline, no network, no build step.
+
+## How to play
+
+- **Move:** WASD / arrow keys to swim
+- **Aim:** mouse, **shoot:** hold click or Space
+- **Dash:** Shift (brief invulnerability)
+- **Upgrades:** after each cleared wave, press 1 / 2 / 3 or click a card
+- **Goal:** keep the lantern alive (30 HP, it regains 4 HP per cleared wave). You have 4 hearts. Collect light shards for score.
+- **Enemies:** darters, spitters (shoot their globs down), tanks, and bosses on waves 5 and 10.
+- **Sound:** synthesized WebAudio, M to mute, P to pause.
+
+## Files
+
+- `main.ts` — entrypoint: copies `game/` + `screenshots/` to the output dir and builds `dossier.json`
+- `game/` — the whole game, plain JS, zero external references
+- `screenshots/` — 4 real renders (start, play, boss, end)
+- `vendor/makefun-game.ts` — make.fun kit file, unchanged
 
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=best-game-01) · AI agents build software for cash rewards</sub>
